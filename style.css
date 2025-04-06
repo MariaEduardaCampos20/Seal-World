@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0; 
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+
+
+}
+body {
+    background-color: black;
+    color: white;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: rgb(252, 252, 255);
+    background: linear-gradient(180deg, rgba(252, 252, 255, 0) 21%, rgba(0, 0, 0, 1) 88%);/* Sombreado */
+    justify-content: center;
+}
+.hero__foreground {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+.hero__background {
+    width: -webkit-fill-available; /* Deixa a imagem do tamaho da tela */
+    position: relative;
+    z-index: -1; /* Coloca sombreado na imagem */
+}
+.section__img {
+    padding: 70px;
+    height: 30rem;
+    object-position: top; /* Define qual parte da imagem quero deixar */
+    object-fit: cover; /* Corta imagem */
+    width: 80%;
+}
+.section__img-inline {
+    width: 15rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section p{
+    flex: 1;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.section__tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+.section__title{
+    margin-top: 12rem;
+}
+.section__text{
+    text-align: center;
+    margin-bottom:  5rem;
+
+}
+.section__title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.section__img-inline{
+    width: 230px;
+    position: absolute;
+    margin-right: 50rem;
+    margin-top: 16rem;
+}
+.section__text-inline{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6; /* Deixa o texto mais fino */
+    padding: 5rem;
+    height: 20px;
+    margin-left: 20rem;
+}
+.section__text-inline > p{
+    margin-left: 8rem;
+}
+.gallery{
+    display: flex;
+}
+.gallery__img{
+    width: 16rem;
+    height: 14rem;
+    margin: 3rem;
+    position: relative;
+  display: inline-block;
+}
+.gallery__img-wrapper:nth-of-type(even){  /* Especifica qual das imagens estou editando */
+    transform: rotate(5deg);
+
+}
+.gallery__img-wrapper:nth-of-type(odd){  /* Especifica qual das imagens estou editando */
+    transform: rotate(-15deg);
+}
+.gallery__img-wrapper:nth-of-type(even){  /* Especifica qual das imagens estou editando */
+    transform: rotate(5deg);
+}
+.gallery__img-wrapper:nth-of-type(odd){  /* Especifica qual das imagens estou editando */
+    transform: rotate(-15deg);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
