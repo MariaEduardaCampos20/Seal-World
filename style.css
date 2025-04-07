@@ -104,6 +104,16 @@ body {
     position: relative;
   display: inline-block;
 }
+.gallery__img::after {
+    content: '';
+    width: 10px; 
+    height: 10px; 
+    background-color: red; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
 .gallery__img-wrapper:nth-of-type(even){  /* Especifica qual das imagens estou editando */
     transform: rotate(5deg);
 
