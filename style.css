@@ -102,18 +102,25 @@ body {
     height: 14rem;
     margin: 3rem;
     position: relative;
-  display: inline-block;
+    display: inline-block;
+
 }
-.gallery__img::after {
-    content: '';
-    width: 10px; 
-    height: 10px; 
-    background-color: red; 
-    border-radius: 50%; 
+.gallery__img-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .ball {
     position: absolute;
-    top: 10px; 
-    right: 10px; 
-}
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
 .gallery__img-wrapper:nth-of-type(even){  /* Especifica qual das imagens estou editando */
     transform: rotate(5deg);
 
